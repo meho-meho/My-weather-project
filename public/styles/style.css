@@ -1,0 +1,46 @@
+body {
+    background-color: rgb(218, 254, 255);
+    margin: 0;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background: linear-gradient(to right, #4ce4ff, #295afa);
+    color: white;
+    padding: 5px;
+    margin-bottom: 10%;
+    box-shadow: gray 0 10px 10px;
+}
+
+h1 {
+    display: inline;
+    margin-top: 0;
+    font-family: cursive;
+}
+
+small {
+    display: block;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+    position: fixed;
+    bottom: 5px;
+    color: rgba(54, 54, 54, 0.651);
+    width: 100%;
+    text-align: center;
+}
+
+.weather-card {
+    background: linear-gradient(to bottom, #4ce4ff, #295afa);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border-radius: 7px;
+    height: fit-content;
+    width: fit-content;
+    box-shadow: gray -5px 5px 5px;
+}

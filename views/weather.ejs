@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Open Weather</title>
+</head>
+<body>
+    <header><h1>weather</h1></header>
+    <% if (locals.mydata) { %>
+    <div class="weather-card">
+        <small><%= mydata.name %></small>
+        <br />
+        <small><%= mydata.description %></small>
+        <img src="https://openweathermap.org/img/wn/<%= mydata.icon %>@2x.png" alt="<%= mydata.description %>">
+        <small><%= mydata.temp %> C°</small>  
+    </div>
+    <footer>Copy rights © <%= mydata.date %></footer>
+    <% } %>
+</body>
+</html>
